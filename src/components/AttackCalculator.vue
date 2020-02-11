@@ -7,7 +7,7 @@
         ATTACK CALCULATOR
       </h2>
       <div
-        class="boxed font-console inline-flex items-center ml-3 transition-opacity duration-150 ease-in-out"
+        class="boxed font-console inline-flex items-center ml-3 transition-opacity duration-150 ease-in-out bg-white"
         :class="{ 'opacity-0': !calculating }"
       >
         <Octicon :icon="Octicons.sync" className="mr-2 spin" />
@@ -143,7 +143,7 @@
         <AnimatedNumber :number="calcOutput.maxDamage" />
       </span>
     </div>
-    <ChartBlock />
+    <!-- <ChartBlock /> -->
   </div>
 </template>
 
@@ -152,7 +152,7 @@
 import { Octicon, Octicons } from 'octicons-vue'
 import CalcWorker from 'worker-loader!@/workers/calc.worker.js'
 import parseDiceString from '@/logic/parseDiceString'
-import ChartBlock from './ChartField/ChartBlock'
+// import ChartBlock from './ChartField/ChartBlock'
 import AnimatedNumber from './AnimatedNumber'
 
 import { debounce } from 'lodash'
@@ -165,7 +165,11 @@ const debouncedCalculate = debounce(calculate, 250)
 
 export default {
   name: 'Calculator',
-  components: { Octicon, AnimatedNumber, ChartBlock },
+  components: {
+    Octicon,
+    AnimatedNumber
+    // ChartBlock
+  },
   data: () => ({
     Octicons,
     pilotLevel: 0,
