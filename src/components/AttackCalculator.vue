@@ -7,8 +7,9 @@
         ATTACK CALCULATOR
       </h2>
       <div
-        class="boxed font-console inline-flex items-center ml-3 transition-opacity duration-150 ease-in-out bg-white"
+        class="boxed font-console inline-flex items-center ml-3 transition-all duration-150 ease-in-out bg-white"
         :class="{ 'opacity-0': !calculating }"
+        :style="{ 'transformX': calculating ? '0px' : '20px' }"
       >
         <Octicon :icon="Octicons.sync" className="mr-2 spin" />
         CALCULATING...
