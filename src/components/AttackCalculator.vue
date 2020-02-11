@@ -111,7 +111,7 @@
     <!-- Roll -->
     <div class="mt-6 mb-3 leading-none">
       <span class="mr-2 text-2xl">ATTACK</span>
-      <span class="font-console boxed inline-block text-2xl font-bold text-white select-all">{{
+      <span class="font-console boxed inline-block text-2xl font-bold text-white bg-white select-all">{{
         calcOutput.roll
       }}</span>
     </div>
