@@ -1,0 +1,520 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200209.211041.1211.0.001.json",
+    "dumpEventTime": "2020-02-09T21:10:41Z",
+    "dumpEventTimeStamp": "1581293441272",
+    "processId": 1211,
+    "cwd": "/mnt/t/work2/athena",
+    "commandLine": [
+      "/usr/local/bin/node",
+      "/mnt/t/work2/athena/node_modules/.bin/vue-cli-service",
+      "serve"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-19555-Microsoft",
+    "osVersion": "#1001-Microsoft Mon Jan 27 09:00:00 PST 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 4038700,
+        "nice": 0,
+        "sys": 3394500,
+        "idle": 12357000,
+        "irq": 420900
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 4039800,
+        "nice": 0,
+        "sys": 1817900,
+        "idle": 13932500,
+        "irq": 69300
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 5743900,
+        "nice": 0,
+        "sys": 2510100,
+        "idle": 11536200,
+        "irq": 32900
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 4851700,
+        "nice": 0,
+        "sys": 1884300,
+        "idle": 13054200,
+        "irq": 18900
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 5622000,
+        "nice": 0,
+        "sys": 2389200,
+        "idle": 11779000,
+        "irq": 29500
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 5450000,
+        "nice": 0,
+        "sys": 1936000,
+        "idle": 12404200,
+        "irq": 22800
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 7190100,
+        "nice": 0,
+        "sys": 2404000,
+        "idle": 10196000,
+        "irq": 24000
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+        "speed": 3401,
+        "user": 6416700,
+        "nice": 0,
+        "sys": 2084000,
+        "idle": 11289500,
+        "irq": 21500
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "94:de:80:6c:a8:d8",
+        "address": "192.168.1.11",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "94:de:80:6c:a8:d8",
+        "address": "2800:a4:29b3:ad00:c1ff:690b:3f2a:2a85",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "94:de:80:6c:a8:d8",
+        "address": "2800:a4:29b3:ad00:4c9c:30df:bd5b:8b8c",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "94:de:80:6c:a8:d8",
+        "address": "fe80::c1ff:690b:3f2a:2a85",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "eth1",
+        "internal": false,
+        "mac": "00:15:5d:22:27:b3",
+        "address": "172.31.208.1",
+        "netmask": "255.255.240.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth1",
+        "internal": false,
+        "mac": "00:15:5d:22:27:b3",
+        "address": "fe80::c1ca:a49c:339e:6adf",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 47
+      },
+      {
+        "name": "eth3",
+        "internal": false,
+        "mac": "fa:66:c3:b7:a8:69",
+        "address": "10.144.178.201",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth3",
+        "internal": false,
+        "mac": "fa:66:c3:b7:a8:69",
+        "address": "fe80::54d0:f7a5:4a50:fbf5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "eth4",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0e",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth4",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0e",
+        "address": "fe80::818a:ba80:3933:44ad",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      }
+    ],
+    "host": "cinnabar"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b05ba5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000009dbd93",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b18e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b509",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce68a5",
+      "symbol": " [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce6f36",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf2dca",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf3cd5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf66e8",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cbd017",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ff307b",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000001376259",
+      "symbol": " [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2157854720,
+    "totalCommittedMemory": 2156014952,
+    "usedMemory": 2124653624,
+    "availableMemory": 44728896,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1118840,
+        "capacity": 1047488,
+        "used": 101696,
+        "available": 945792
+      },
+      "old_space": {
+        "memorySize": 1584246784,
+        "committedMemory": 1583901640,
+        "capacity": 1566466816,
+        "used": 1563921352,
+        "available": 2545464
+      },
+      "code_space": {
+        "memorySize": 3309568,
+        "committedMemory": 3206528,
+        "capacity": 2654784,
+        "used": 2654784,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 8130560,
+        "committedMemory": 7946864,
+        "capacity": 6066720,
+        "used": 6066720,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 559185920,
+        "committedMemory": 559185920,
+        "capacity": 551326120,
+        "used": 551326120,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550656,
+        "used": 550656,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 405.719,
+    "kernelCpuSeconds": 30.5312,
+    "cpuConsumptionPercent": 156.924,
+    "maxRss": 2255777792,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 3895006
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 232.531,
+    "kernelCpuSeconds": 22.2969,
+    "cpuConsumptionPercent": 91.6648,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_package_eslintConfig_root": "true",
+    "npm_package_dependencies_register_service_worker": "^1.6.2",
+    "USER": "ari",
+    "npm_package_devDependencies_eslint_plugin_standard": "^4.0.0",
+    "npm_package_devDependencies__vue_cli_service": "^4.2.0",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v12.14.1 linux x64",
+    "npm_package_dependencies_vue": "^2.6.11",
+    "npm_config_bin_links": "true",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "npm_package_eslintConfig_env_node": "true",
+    "npm_package_devDependencies_eslint_plugin_node": "^11.0.0",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "3",
+    "HOME": "/home/ari",
+    "TERM_PROGRAM_VERSION": "1.41.1",
+    "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-a101551b-5ba5-448f-854e-cc8a5abebd3a.sock",
+    "npm_config_init_license": "MIT",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_config_version_tag_prefix": "v",
+    "npm_package_scripts_serve": "vue-cli-service serve",
+    "COLORTERM": "truecolor",
+    "PIPE_LOGGING": "true",
+    "WSL_DISTRO_NAME": "Ubuntu",
+    "npm_package_description": "## Project setup ``` yarn install ```",
+    "npm_package_readmeFilename": "README.md",
+    "OMF_PATH": "/home/ari/.local/share/omf",
+    "LOGNAME": "ari",
+    "npm_package_devDependencies_vue_template_compiler": "^2.6.11",
+    "npm_package_devDependencies_eslint_plugin_import": "^2.20.1",
+    "npm_package_devDependencies__vue_cli_plugin_pwa": "^4.2.0",
+    "NAME": "cinnabar",
+    "npm_package_dependencies_gsap": "^3.1.1",
+    "npm_package_private": "true",
+    "npm_package_scripts_lint": "vue-cli-service lint",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "TERM": "xterm-256color",
+    "npm_package_dependencies_core_js": "^3.6.4",
+    "npm_config_ignore_scripts": "",
+    "npm_package_eslintConfig_parserOptions_parser": "babel-eslint",
+    "npm_package_devDependencies_worker_loader": "^2.0.0",
+    "PATH": "/tmp/yarn--1581293162893-0.08716591648820615:/mnt/t/work2/athena/node_modules/.bin:/home/ari/.config/yarn/link/node_modules/.bin:/home/ari/.yarn/bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/home/ari/.vscode-server/bin/26076a4de974ead31f97692a0d32f90d735645c0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/libnvvp:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/ffmpeg:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/ManagementStudio/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/Lua/5.1:/mnt/c/Program Files (x86)/Lua/5.1/clibs:/mnt/c/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/ZeroTier/One/:/mnt/c/Program Files/FileBot/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/GtkSharp/2.12/bin:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Ruby26-x64/bin:/mnt/c/Users/Ari/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/Ari/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/Ari/AppData/Local/Programs/Python/Python36/Scripts/:/mnt/c/Users/Ari/AppData/Local/Programs/Python/Python36/:/mnt/c/Users/Ari/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ari/AppData/Local/GitHubDesktop/bin:/mnt/c/Program Files/ffmpeg:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/bin:/mnt/c/Ruby24-x64/bin:/mnt/c/Users/Ari/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Mikero/DePboTools/bin:/mnt/c/Users/Ari/AppData/Roaming/npm:/mnt/c/Users/Ari/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ari/AppData/Local/Yarn/bin:/mnt/d/Path",
+    "NODE": "/usr/local/bin/node",
+    "npm_package_name": "athena",
+    "npm_package_devDependencies_vue_cli_plugin_tailwind": "^1.2.0",
+    "npm_package_scripts_test_unit": "vue-cli-service test:unit",
+    "LANG": "C.UTF-8",
+    "npm_package_devDependencies_eslint": "^6.7.2",
+    "npm_package_devDependencies__vue_test_utils": "1.0.0-beta.31",
+    "TERM_PROGRAM": "vscode",
+    "npm_lifecycle_script": "vue-cli-service serve",
+    "npm_package_browserslist_0": "> 1%",
+    "npm_package_eslintConfig_extends_0": "plugin:vue/essential",
+    "npm_package_browserslist_1": "last 2 versions",
+    "npm_package_eslintConfig_extends_1": "@vue/standard",
+    "npm_package_dependencies_typeit": "^6.1.4",
+    "npm_config_version_git_message": "v%s",
+    "SHELL": "/usr/bin/fish",
+    "npm_lifecycle_event": "serve",
+    "npm_package_version": "0.1.0",
+    "VERBOSE_LOGGING": "true",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"serve\"],\"original\":[\"serve\"]}",
+    "npm_package_scripts_build": "vue-cli-service build",
+    "npm_package_devDependencies__vue_cli_plugin_eslint": "^4.2.0",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "npm_config_strict_ssl": "true",
+    "PWD": "/mnt/t/work2/athena",
+    "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+    "npm_package_devDependencies__vue_cli_plugin_babel": "^4.2.0",
+    "OMF_CONFIG": "/home/ari/.config/omf",
+    "VIRTUAL_ENV_DISABLE_PROMPT": "1",
+    "AMD_ENTRYPOINT": "vs/server/remoteExtensionHostProcess",
+    "npm_package_devDependencies_eslint_plugin_vue": "^6.1.2",
+    "npm_package_devDependencies__vue_eslint_config_standard": "^5.1.0",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "npm_package_devDependencies_babel_eslint": "^10.0.3",
+    "HOSTTYPE": "x86_64",
+    "npm_package_devDependencies_eslint_plugin_promise": "^4.2.1",
+    "INIT_CWD": "/mnt/t/work2/athena",
+    "WSLENV": "VSCODE_WSL_EXT_LOCATION/up",
+    "NODE_ENV": "development",
+    "BABEL_ENV": "development",
+    "VUE_CLI_TRANSPILE_BABEL_RUNTIME": "true",
+    "WEBPACK_DEV_SERVER": "true",
+    "VUE_CLI_ENTRY_FILES": "[\"/mnt/t/work2/athena/src/main.js\"]"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 8388608
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7823,
+      "hard": 7823
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}

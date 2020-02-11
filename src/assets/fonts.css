@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Helvetica;
+  src: url('./fonts/Helvetica.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: 700;
+  src: url('./fonts/Helvetica-Bold.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');

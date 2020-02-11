@@ -1,0 +1,30 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  /* @apply bg-primary text-white; */
+}
+
+.input {
+  @apply text-primary px-2 py-1 mx-2 bg-white rounded;
+}
+
+.boxed {
+  @apply text-primary px-2 py-1 rounded;
+}
+
+.boxed--bordered {
+  @apply text-white bg-transparent border border-white;
+}
+
+.resultbox {
+  @apply font-display px-2 py-1 text-2xl font-bold uppercase border rounded;
+  border-color: currentColor;
+}
+
+.resultbox:not(:last-child) {
+  @apply mr-3;
+}

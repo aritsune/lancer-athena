@@ -1,28 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="min-h-screen px-16 py-8 text-white bg-primary font-body md:py-2 md:px-4">
+    <Title class="relative z-10 in-left" />
+    <Background class="fixed right-0" />
+    <!-- AttackCalculator -->
+    <AttackCalculator class="relative z-10 in-fade" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from '@/components/Title'
+import Background from '@/components/Background'
+import AttackCalculator from '@/components/AttackCalculator'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { Title, Background, AttackCalculator }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
