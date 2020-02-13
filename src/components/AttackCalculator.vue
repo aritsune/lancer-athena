@@ -203,7 +203,7 @@ export default {
       this.calculating = true
       debouncedCalculate(this.worker, {
         level: this.pilotLevel,
-        accdiff: this.accDiff,
+        accdiff: parseInt(this.accDiff),
         targetEvasion: this.targetEvasion,
         damageDice: this.parsedDamageRoll,
         damageOnCritDice: this.parsedDamageOnCritRoll,
